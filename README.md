@@ -69,6 +69,7 @@ Please download the "PlankDemo.mov" file to view the demo, as the video size is 
 ## 8. Challenges and Further Improvement
 <img src="https://github.com/eddylamhw/trAIner24/blob/main/images(ppt)/capstone_project_00025.jpg" width= "500">
 <img src="https://github.com/eddylamhw/trAIner24/blob/main/images(ppt)/capstone_project_00026.jpg" width= "500">
+
 # Reference
 <img src="https://github.com/eddylamhw/trAIner24/blob/main/images(ppt)/capstone_project_00027.jpg" width= "500">
 
