@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Plank</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+</head>
+
+<body>
+<div class="container">
+    <form method = "POST">
+        <label style="color:white;"> Duration of plank</label>
+        <input type="text" name="duration">
+        <br>
+        <input type="submit" value="Start" style="background-color:#0191FE;color:white;">
+    </form>
+    <form method = "POST">
+        <input type="submit" value="Show Result" name="result">
+    </form>
+    <div class="row">
+        {% if activate != "" %}
+        <div class="col-lg-8  offset-lg-2">
+            <h3 class="mt-5" style="color:white;">Plank</h3>
+            <img src="{{ url_for('video_feed_plank') }}" width="100%">
+        </div>
+        {% endif %}
+    </div>
+</div>
+</body>
+
+</html>

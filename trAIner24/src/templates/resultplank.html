@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset = "UTF-8">
+  <title>Result Plank</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/result.css') }}">
+
+</head>
+<body>
+  <h1 style="color:white;"> Result </h1>
+  <h2 style="color:white;"> Correct: {{correct}}% </h2>
+  <h2 style="color:white;"> Incorrect: {{incorrect}}% </h2>
+  <h3 style="color:white;"> <pre>   High-Hip: {{highhip}}% </pre></h3>
+  <h3 style="color:white;"> <pre>   Low-Hip: {{lowhip}}% </pre></h3>
+  <h3 style="color:white;">{{video}}</h4>
+  <video width="320" height="240" controls="" autoplay="" name="media">
+    <source src= " {{url_for('static', filename = videopath)}}" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  
+</body>
+</html>

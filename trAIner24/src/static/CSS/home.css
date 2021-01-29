@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    padding: 0;
+    width:100vw;
+    height: 100vh;
+    background-color: #242f3f;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-size:70px;
+}
+.workouts ul {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    margin: 0;
+    padding:0;
+    transform: translate(-50%,-50%);
+    display: flex;
+    color: white;
+    font-family: verdana;
+    font-size:40px;
+}
+
+h2{
+    color: white;
+}
+h3 {
+    color: white;
+}
+
+.workouts ul li {
+    list-style: none;
+    margin:0 15px;
+}
+
+.workouts ul li .dg {
+    font-size: 40px;
+    line-height: 60px;
+    transition: 1s;
+    color: white;
+}
+
+.workouts ul li .dg:hover {
+    color:aqua;
+    font-size:50px;
+}
+
+.workouts ul li:hover {
+    transform: translate(0,-15px);
+    transition: .5s;
+}
+
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:100%;
+}
+.loader-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #242f3f;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    border: 4px solid #Fff;
+    animation: loader 2s infinite ease;
+}
+.loader-inner {
+    vertical-align: top;
+    display: inline-block;
+    width: 100%;
+    background-color: #fff;
+    animation: loader-inner 2s infinite ease-in;
+}
+
+#button {
+    background-color: #0191FE;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 30px;
+}
+@keyframes loader {
+    0% { transform: rotate(0deg);}
+    25% { transform: rotate(180deg);}
+    50% { transform: rotate(180deg);}
+    75% { transform: rotate(360deg);}
+    100% { transform: rotate(360deg);}
+}
+@keyframes loader-inner {
+    0% { height: 0%;}
+    25% { height: 0%;}
+    50% { height: 100%;}
+    75% { height: 100%;}
+    100% { height: 0%;}
+}
+

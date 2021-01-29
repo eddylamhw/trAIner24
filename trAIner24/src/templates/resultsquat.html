@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset = "UTF-8">
+  <title>Result Squat</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/result.css') }}">
+  <style>
+    {
+      box-sizing: border-box;
+    }
+    .column {
+      float: left;
+      width: 50%
+    }
+    .row:after{
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+  </style>
+
+</head>
+<body>
+  <h1 style="color:white;"> Result </h1>
+  <h2 style="color:white;"> Overall Score: {{score}}</h2>
+  <div class="row">
+    <div class = "column">
+      <h2 style="color:white;"> Correct: {{score1}} </h2>
+      {% for video in correctdict.items() %}
+      <h3 style="color:white;"> {{video[0]}} </h3>
+
+      <video width="320" height="240" controls="" autoplay="" name="media">
+        <source src= " {{url_for('static', filename = video[1])}}" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      {% endfor %}
+    </div>
+
+    <div class = "column">
+      <h2 style="color:white;"> Incorrect: {{score2}} </h2>
+      {% for video in incorrectdict.items() %}
+      <h3 style="color:white;"> {{video[0]}} </h3>
+
+      <video width="320" height="240" controls="" autoplay="" name="media">
+        <source src= " {{url_for('static', filename = video[1])}}" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      {% endfor %}
+    </div>
+  </div>
+</body>
+</html>
