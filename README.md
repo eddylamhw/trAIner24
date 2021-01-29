@@ -72,5 +72,5 @@ Please download the "PlankDemo.mov" file to view the demo, as the video size is 
 
 # Reference
 <img src="https://github.com/eddylamhw/trAIner24/blob/main/images(ppt)/capstone_project_00027.jpg" width= "500">
-
+The codes for OpenPose and action recognition models are largely compiled by felixchenfy, who originally used them to classify 9 actions, including jump, kick, punch, run, sit, squat, stand, walk, and wave. We mainly used his codes for classifying correct and incorrect actions, and then deployed the program as a Flask app.
 
