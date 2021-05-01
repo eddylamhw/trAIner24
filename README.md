@@ -10,7 +10,7 @@ This project aims to detect the users’ motion when doing exercises, help them 
 OpenPose is the first real-time multi-person system to jointly detect human body, hand, facial, and foot keypoints on single images. It is widely used for pose estimation, and also action recognition, which is what trAIner24 is going to do, recognizing correct and incorrect forms of workout.\
 <img src="https://github.com/eddylamhw/trAIner24/blob/main/ppt/media/image25.png" width = "500">
 
-### Two-branch Multi-stage" CNN
+### Two-branch Multi-stage CNN
 <img src="https://github.com/eddylamhw/trAIner24/blob/main/ppt/media/image27.png" width = "500">
 For the operation of OpenPose, an RGB image is firstly fed as input into a “two-branch multi-stage” CNN. Two branch means that the CNN produces two different outputs, and multi-stage simply means that the network is stacked one on the other at every stage.
 
